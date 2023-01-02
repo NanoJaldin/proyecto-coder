@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------HEADER------------------- */
+header {
+  background-color: #fbe7c6;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+  background-color: rgba(217, 116, 170, 0.814);
+  border: 2px solid rgba(217, 116, 170, 0.881);
+  padding: 3px;
+  margin: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: beige;
+}
+
+/* ---------------------------MAIN-------------------- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.532), rgba(0, 0, 0, 0.503)),
+    url("../img/fondo.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 120px;
+  font-weight: bolder;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 7px rgba(238, 129, 129, 0.9);
+}
+.hero h2 {
+  font-size: 50px;
+  font-style: italic;
+  margin: 10px;
+}
+.hero div {
+  width: 80%;
+  margin: 0 auto;
+}
+.hero div p {
+  font-size: 30px;
+}
+.servicioPersonalizado {
+  background-color: #fbe7c6;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.servicioPersonalizado .servicioTextoContenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicioPersonalizado .servicioTextoContenedor h2 {
+  border: 2px solid black;
+  width: 600px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px;
+  background-color: rgba(250, 128, 114, 0.736);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+.servicioPersonalizado .servicioTextoContenedor p {
+  width: 580px;
+  text-align: center;
+  border: 1px solid gray;
+  margin: 10px;
+  background-color: #b4f8c9b3;
+  padding: 10px;
+  font-size: medium;
+}
+.servicioPersonalizado .servicioTextoContenedor button {
+  width: 90px;
+  height: 30px;
+  /* margin-bottom: 10px;
+  margin-left: 10px; */
+  align-self: start;
+}
+.servicioPersonalizado .servicioTextoContenedor button a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(127, 255, 212, 0.419);
+  font-size: larger;
+  font-style: oblique;
+  font-weight: bold;
+}
+.servicioPersonalizado .servicioImagen {
+  margin: 20px 0px 20px 0px;
+}
+.servicioPersonalizado .servicioImagen img {
+  width: 550px;
+  height: 500px;
+  margin: 10px;
+}
+.primerGradiente {
+  background: rgb(251, 231, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 231, 198, 1) 0%,
+    rgba(230, 197, 216, 1) 100%
+  );
+  width: 100%;
+  height: 40px;
+}
+.trabajos {
+  background-color: #e6c5d8;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+}
+.trabajos .trabajosTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 40px;
+}
+.trabajos .trabajosTexto h2 {
+  border: 2px solid black;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  margin: 15px;
+  padding-top: 15px;
+  background-color: rgba(250, 128, 114, 0.736);
+  font-size: 40px;
+  font-weight: bold;
+  justify-self: start;
+}
+.trabajos .trabajosTexto p {
+  width: 480px;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: #b4f8c9b3;
+  margin: 10px;
+  padding: 10px;
+  font-size: medium;
+}
+.trabajos .trabajosTexto button {
+  width: 90px;
+  height: 30px;
+  align-self: start;
+}
+.trabajos .trabajosTexto button a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(127, 255, 212, 0.419);
+  font-size: larger;
+  font-style: oblique;
+  font-weight: bold;
+}
+.trabajos .trabajosImagen img {
+  width: 700px;
+  height: 500px;
+  margin: 40px 0px 40px 10px;
+}
+.segundoGradiente {
+  background: rgb(236, 248, 127);
+  background: linear-gradient(
+    0deg,
+    rgba(236, 248, 127, 1) 0%,
+    rgba(230, 197, 216, 1) 100%
+  );
+  width: 100%;
+  height: 40px;
+}
+.productosPopulares {
+  background-color: #ecf87f;
+  height: 600px;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.productosPopulares h2 {
+  border: 2px solid black;
+  width: 650px;
+  height: 80px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(250, 128, 114, 0.736);
+  font-size: 40px;
+  font-weight: bold;
+  align-self: center;
+}
+.productosPopulares .contenedorProductos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.productosPopulares .contenedorProductos div {
+  border: 1px solid black;
+  width: 250px;
+  height: 310px;
+  text-align: center;
+  margin: 15px;
+  background-color: rgb(235, 186, 80);
+}
+
+.productosPopulares .contenedorProductos div h3 {
+  background-color: rgb(255, 166, 0);
+  margin: 10px;
+}
+
+.productosPopulares .contenedorProductos div a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-weight: bold;
+}
+.productosPopulares .contenedorProductos div img {
+  width: 250px;
+  height: 250px;
+}
+
+.productosPopulares button {
+  width: 120px;
+  height: 30px;
+  align-self: end;
+  margin-right: 15px;
+}
+.productosPopulares button a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(127, 255, 212, 0.419);
+  font-size: larger;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/* ----------------------FOOTER---------------------- */
+footer {
+  background-color: #ddc67b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+footer .contenedorMarca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contenedorMarca img {
+  width: 200px;
+  height: 200px;
+}
+footer .contenedorMarca h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+footer div ul {
+  margin: 15px;
+}
+footer div div {
+  border: 1px solid black;
+  width: 400px;
+  margin: 10px;
+}
+footer div div h4 {
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+}
+footer div div p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+footer div ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+footer div ul li img {
+  width: 16px;
+  height: 16px;
+}
+/*--------------------SERVICIOS-------------*/
+.personalizarMesa {
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.personalizarMesa h2 {
+  border: 2px solid black;
+  width: 650px;
+  height: 80px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(250, 128, 114, 0.736);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+  align-self: flex-start;
+}
+.personalizarMesa p {
+  border: solid 1px black;
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: #b4f8c9b3;
+  margin: 15px;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.personalizarMesa button {
+  width: 160px;
+  height: 50px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.889);
+  background-color: rgba(127, 255, 212, 0.419);
+  font-size: larger;
+  font-style: oblique;
+  align-self: flex-start;
+  margin: 0px 0px 30px 30px;
+  /* font-weight: bold; */
+}
+.introProductos {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+.introProductos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.introProductos div h2 {
+  border: 2px solid black;
+  width: 650px;
+  height: 80px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(250, 128, 114, 0.736);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+}
+.introProductos div p {
+  width: 480px;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: #b4f8c9b3;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+.introProductos img {
+  width: 600px;
+  height: 550px;
+}
+.galeriaProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+  margin: 15px;
+  margin-bottom: 50px;
+}
+.galeriaProductos div img {
+  width: 100%;
+  height: 100%;
+}
+/*--------------------GALERIA-------------- */
+.fotosBoda {
+  background-color: #ecf87f;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+}
+.fotosBoda h2 {
+  border: 1px solid black;
+  background-color: #ddc67b;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.fotosBoda .fotosContenedor {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: 10px;
+}
+.fotosBoda .fotosContenedor div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foto1 {
+  grid-column: 1 / span 2;
+  grid-row: span 2;
+}
+.foto2 {
+  grid-column: span 2;
+}
+.foto7 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.foto16 {
+  grid-column: span 2;
+}
+/*--------------SOBRE NOSOTROS------------ */
+.quienesSomos {
+  background-color: rgb(238, 156, 231);
+}
+.quienesSomos div {
+  width: 550px;
+}
+.quienesSomos div h2 {
+  border: 1px solid black;
+  background-color: #bcea67;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.quienesSomos div p {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #b4f8c9b3;
+}
+.quienesSomos img {
+  width: 600px;
+  height: 500px;
+  margin: 10px;
+}
+
+/*-------------CONTACTO---------------- */
+
+.formulario {
+  background-image: url("../img/fondocontacto.jpg");
+  background-repeat: var(no-repeat);
+  background-position: center;
+  background-size: 100vw;
+  height: 80vh;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario form {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 60%;
+  height: 78vh;
+  margin: auto;
+}
+.formulario form h2 {
+  font-size: 60px;
+  color: #fbe7c6;
+  text-align: center;
+}
+.formulario form .formContenedor {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContenedor div input,
+textarea {
+  width: 500px;
+  margin-bottom: 5px;
+  padding: 7px;
+}
+.formContenedor div textarea {
+  min-height: 100px;
+  max-height: 150px;
+  min-width: 500px;
+  max-width: 500px;
+}
+
+/*--------- MEDIAS QUERIES -----------*/
+@media screen and (max-width: 1240px) {
+  .servicioPersonalizado .servicioImagen img {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 600px;
+    height: 500px;
+    margin: 40px 0px 40px 10px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .servicioPersonalizado .servicioImagen {
+    margin: 15px 0px 15px 0px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 450px;
+    height: 400px;
+    margin: 10px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 500px;
+    height: 450px;
+    margin: 40px 5px 40px 10px;
+  }
+}
