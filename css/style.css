@@ -329,6 +329,11 @@ footer .contenedorContacto div ul li img {
 }
 /*--------------------SERVICIOS-------------*/
 .personalizarMesa {
+  background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.51)),
+    url("../img/fondoServicios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   display: flex;
@@ -343,7 +348,7 @@ footer .contenedorContacto div ul li img {
   height: 80px;
   text-align: center;
   padding: 5px;
-  background-color: rgba(250, 128, 114, 0.736);
+  background-color: rgba(250, 128, 114, 0.936);
   font-size: 40px;
   font-weight: bold;
   margin: 20px;
@@ -355,7 +360,7 @@ footer .contenedorContacto div ul li img {
   height: 200px;
   text-align: center;
   border: 1px solid gray;
-  background-color: #b4f8c9b3;
+  background-color: #b4f8cae8;
   margin: 15px;
   padding: 10px;
   font-size: 24px;
@@ -366,7 +371,7 @@ footer .contenedorContacto div ul li img {
   height: 50px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.889);
-  background-color: rgba(127, 255, 212, 0.419);
+  background-color: rgba(127, 255, 212, 0.889);
   font-size: larger;
   font-style: oblique;
   align-self: flex-start;
@@ -381,6 +386,7 @@ footer .contenedorContacto div ul li img {
   margin-bottom: 50px;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
+  background-image: url("../img/fondoServicios2.jpg");
 }
 .introProductos div {
   display: flex;
@@ -1027,10 +1033,11 @@ textarea {
   }
   header nav ul li {
     width: 60px;
-    height: 10px;
+    height: 30px;
   }
   header nav ul li a {
     font-size: 5px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 400px) {
