@@ -292,34 +292,38 @@ footer .contenedorMarca img {
   width: 200px;
   height: 200px;
 }
-footer .contenedorMarca h5 {
-  font-size: 15px;
-  font-weight: bold;
-}
-footer div ul {
-  margin: 15px;
-}
-footer div div {
+footer .contenedorMarca div {
   border: 1px solid black;
   width: 400px;
   margin: 10px;
 }
-footer div div h4 {
+footer .contenedorMarca div h4 {
   font-weight: bold;
   font-size: 45px;
   text-align: center;
 }
-footer div div p {
+footer .contenedorMarca div p {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
-footer div ul li a {
+/* footer .contenedorMarca h5 {
+  font-size: 15px;
+  font-weight: bold;
+} */
+footer .contenedorContacto {
+  display: flex;
+}
+footer .contenedorContacto div ul {
+  margin: 15px;
+}
+
+footer .contenedorContacto div ul li a {
   text-decoration: none;
   list-style: none;
   color: black;
 }
-footer div ul li img {
+footer .contenedorContacto div ul li img {
   width: 16px;
   height: 16px;
 }
@@ -559,5 +563,505 @@ textarea {
     width: 500px;
     height: 450px;
     margin: 40px 5px 40px 10px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hero h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+  }
+  .hero h2 {
+    font-size: 30px;
+    margin: 5px;
+  }
+  .hero div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .hero div p {
+    font-size: 15px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 400px;
+    margin: 15px;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 380px;
+    margin: 7px;
+    padding: 7px;
+    font-size: 17px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button a {
+    font-size: larger;
+  }
+  .servicioPersonalizado .servicioImagen {
+    margin: 20px 0px 20px 0px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 500px;
+    height: 450px;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 400px;
+    height: 50px;
+    margin: 15px;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 380px;
+    margin: 7px;
+    padding: 7px;
+    font-size: 17px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 550px;
+    height: 350px;
+    margin: 40px 0px 40px 10px;
+  }
+  .productosPopulares {
+    height: 600px;
+  }
+  .productosPopulares h2 {
+    width: 500px;
+    height: 70px;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .productosPopulares .contenedorProductos div {
+    width: 320px;
+    margin: 10px;
+  }
+
+  .productosPopulares .contenedorProductos div img {
+    width: 317px;
+  }
+  .tortaTresLeches {
+    display: none;
+  }
+  footer .contenedorMarca img {
+    width: 150px;
+    height: 150px;
+  }
+  footer .contenedorMarca div {
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .trabajos .trabajosImagen img {
+    width: 450px;
+    height: 400px;
+  }
+  .productosPopulares .contenedorProductos div {
+    width: 270px;
+    margin: 5px;
+  }
+
+  .productosPopulares .contenedorProductos div img {
+    width: 267px;
+  }
+}
+@media screen and (max-width: 975px) {
+  footer .contenedorMarca div {
+    width: 300px;
+    margin-left: 20px;
+  }
+  footer .contenedorMarca div h4 {
+    font-size: 40px;
+  }
+  footer .contenedorMarca div p {
+    font-size: 15px;
+  }
+  footer .contenedorContacto div ul {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .servicioPersonalizado .servicioImagen img {
+    width: 450px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .servicioPersonalizado .servicioImagen img {
+    width: 400px;
+    height: 350px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 300px;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 280px;
+    margin: 7px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button {
+    width: 50px;
+    height: 20px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button a {
+    font-size: 10px;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 300px;
+    font-size: 20px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 280px;
+    margin: 7px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .trabajos .trabajosTexto button {
+    width: 50px;
+    height: 20px;
+  }
+  .trabajos .trabajosTexto button a {
+    font-size: 10px;
+  }
+  .productosPopulares {
+    height: 80vh;
+  }
+  .productosPopulares h2 {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .productosPopulares .contenedorProductos div {
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+  }
+
+  .productosPopulares .contenedorProductos div img {
+    width: 197px;
+    height: 200px;
+  }
+  .productosPopulares button {
+    width: 80px;
+    height: 20px;
+  }
+  .productosPopulares button a {
+    font-size: 10px;
+  }
+  footer .contenedorMarca img {
+    width: 150px;
+    height: 150px;
+  }
+  footer .contenedorMarca div {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+  }
+  footer .contenedorMarca div h4 {
+    font-size: 30px;
+  }
+  footer .contenedorMarca div p {
+    font-size: 15px;
+  }
+  footer .contenedorContacto div ul {
+    margin: 7px;
+  }
+
+  footer .contenedorContacto div ul li a {
+    font-size: 10px;
+  }
+  footer .contenedorContacto div ul li img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .hero h1 {
+    font-size: 70px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .hero div p {
+    font-size: 12px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 320px;
+    height: 270px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 320px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 690px) {
+  header nav ul li {
+    width: 80px;
+    height: 30px;
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+  }
+  header nav ul li a {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .servicioPersonalizado .servicioImagen img {
+    width: 270px;
+    height: 200px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 270px;
+    height: 200px;
+  }
+  .productosPopulares .contenedorProductos div {
+    width: 150px;
+    height: 200px;
+    margin: 5px;
+  }
+
+  .productosPopulares .contenedorProductos div img {
+    width: 147px;
+    height: 150px;
+  }
+  .productosPopulares .contenedorProductos div h3 {
+    font-size: 12px;
+    margin: 7px;
+  }
+  footer .contenedorMarca {
+    flex-direction: column;
+  }
+  footer .contenedorMarca img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 620px) {
+  header {
+    flex-direction: column;
+  }
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 200px;
+    font-size: 13px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 180px;
+    margin: 7px;
+    padding: 5px;
+    font-size: 7px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button {
+    width: 45px;
+    height: 15px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button a {
+    font-size: 7px;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 200px;
+    height: auto;
+    font-size: 13px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 180px;
+    font-size: 7px;
+  }
+  .trabajos .trabajosTexto button {
+    width: 45px;
+    height: 15px;
+  }
+  .trabajos .trabajosTexto button a {
+    font-size: 7px;
+  }
+  .productosPopulares h2 {
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 526px) {
+  .servicioPersonalizado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 350px;
+    font-size: 25px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 400px;
+    font-size: 17px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button {
+    align-self: flex-end;
+    width: 60px;
+    height: 20px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor button a {
+    font-size: 12px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 450px;
+    height: 300px;
+  }
+  .trabajos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 350px;
+    font-size: 25px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 400px;
+    font-size: 17px;
+  }
+  .trabajos .trabajosTexto button {
+    align-self: flex-end;
+    width: 60px;
+    height: 20px;
+  }
+  .trabajos .trabajosTexto button a {
+    font-size: 12px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 450px;
+    height: 300px;
+  }
+  .productosPopulares h2 {
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+  }
+  footer .contenedorMarca div {
+    width: 250px;
+  }
+  footer .contenedorMarca div h4 {
+    font-size: 20px;
+  }
+  footer .contenedorMarca div p {
+    font-size: 10px;
+  }
+  footer .contenedorContacto div h5 {
+    font-size: 10px;
+
+    text-align: center;
+  }
+  footer .contenedorContacto div ul {
+    margin: 5px;
+    list-style: none;
+  }
+
+  footer .contenedorContacto div ul li a {
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* header nav ul {
+    justify-content: start;
+  } */
+  header nav ul li {
+    margin: 5px;
+    /* text-align: center; */
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h2 {
+    font-size: 15px;
+  }
+  .hero div p {
+    font-size: 10px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 270px;
+    font-size: 20px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 350px;
+    font-size: 15px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 370px;
+    height: 250px;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 270px;
+    font-size: 20px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 350px;
+    font-size: 15px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 370px;
+    height: 250px;
+  }
+  .productosPopulares .contenedorProductos .pastaflora {
+    display: none;
+  }
+  footer .contenedorMarca div {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 451px) {
+  header img {
+    width: 70px;
+    height: 70px;
+  }
+  header nav ul li {
+    width: 60px;
+    height: 10px;
+  }
+  header nav ul li a {
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .servicioPersonalizado .servicioTextoContenedor h2 {
+    width: 230px;
+    font-size: 17px;
+  }
+  .servicioPersonalizado .servicioTextoContenedor p {
+    width: 300px;
+    font-size: 13px;
+  }
+  .servicioPersonalizado .servicioImagen img {
+    width: 330px;
+    height: 200px;
+  }
+  .trabajos .trabajosTexto h2 {
+    width: 230px;
+    font-size: 17px;
+  }
+  .trabajos .trabajosTexto p {
+    width: 300px;
+    font-size: 13px;
+  }
+  .trabajos .trabajosImagen img {
+    width: 330px;
+    height: 200px;
+  }
+  footer .contenedorMarca div {
+    width: 170px;
+  }
+  footer .contenedorContacto {
+    flex-direction: column;
   }
 }
