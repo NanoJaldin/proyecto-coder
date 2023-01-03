@@ -534,6 +534,7 @@ textarea {
 
 /*--------- MEDIAS QUERIES -----------*/
 @media screen and (max-width: 1240px) {
+  /*!---------MAIN--------------*/
   .servicioPersonalizado .servicioImagen img {
     width: 500px;
     height: 500px;
