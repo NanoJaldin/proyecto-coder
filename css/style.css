@@ -340,7 +340,7 @@ footer .contenedorContacto div ul li img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  height: 80vh;
 }
 .personalizarMesa h2 {
   border: 2px solid black;
@@ -379,14 +379,16 @@ footer .contenedorContacto div ul li img {
   /* font-weight: bold; */
 }
 .introProductos {
+  height: 650px;
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  margin-top: 30px;
-  margin-bottom: 50px;
+  /* margin-top: 30px;
+  margin-bottom: 50px; */
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  background-image: url("../img/fondoServicios2.jpg");
+  background-color: #fffdd1;
+  /* line-height: 0; */
 }
 .introProductos div {
   display: flex;
@@ -400,31 +402,35 @@ footer .contenedorContacto div ul li img {
   height: 80px;
   text-align: center;
   padding: 5px;
-  background-color: rgba(250, 128, 114, 0.736);
+  background-color: rgba(250, 128, 114, 0.936);
   font-size: 40px;
   font-weight: bold;
   margin: 20px;
+  margin-top: 50px;
 }
 .introProductos div p {
   width: 480px;
   text-align: center;
   border: 1px solid gray;
-  background-color: #b4f8c9b3;
+  background-color: #b4f8cae8;
   margin: 10px;
   padding: 10px;
   font-size: 30px;
 }
 .introProductos img {
+  align-self: center;
   width: 600px;
   height: 550px;
 }
 .galeriaProductos {
+  background-color: #fffdd1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
   gap: 15px;
-  margin: 15px;
-  margin-bottom: 50px;
+  padding: 30px;
+  /* margin: 15px;
+  margin-bottom: 50px; */
 }
 .galeriaProductos div img {
   width: 100%;
@@ -543,8 +549,14 @@ textarea {
 }
 
 /*--------- MEDIAS QUERIES -----------*/
+
+@media screen and (max-width: 1290px) {
+  .introProductos img {
+    width: 550px;
+    height: 500px;
+  }
+}
 @media screen and (max-width: 1240px) {
-  /*!---------MAIN--------------*/
   .servicioPersonalizado .servicioImagen img {
     width: 500px;
     height: 500px;
@@ -554,6 +566,19 @@ textarea {
     width: 600px;
     height: 500px;
     margin: 40px 0px 40px 10px;
+  }
+  .introProductos div h2 {
+    width: 600px;
+    height: 70px;
+    font-size: 35px;
+  }
+  .introProductos div p {
+    width: 480px;
+    font-size: 25px;
+  }
+  .introProductos img {
+    width: 500px;
+    height: 450px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -569,6 +594,10 @@ textarea {
     width: 500px;
     height: 450px;
     margin: 40px 5px 40px 10px;
+  }
+  .introProductos img {
+    width: 450px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -636,12 +665,10 @@ textarea {
     padding: 5px;
     font-size: 30px;
   }
-
   .productosPopulares .contenedorProductos div {
     width: 320px;
     margin: 10px;
   }
-
   .productosPopulares .contenedorProductos div img {
     width: 317px;
   }
@@ -655,6 +682,19 @@ textarea {
   footer .contenedorMarca div {
     margin-left: 35px;
   }
+  .introProductos div h2 {
+    width: 500px;
+    height: 65px;
+    font-size: 30px;
+  }
+  .introProductos div p {
+    width: 400px;
+    font-size: 20px;
+  }
+  .galeriaProductos {
+    gap: 10px;
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .trabajos .trabajosImagen img {
@@ -665,9 +705,31 @@ textarea {
     width: 270px;
     margin: 5px;
   }
-
   .productosPopulares .contenedorProductos div img {
     width: 267px;
+  }
+  .introProductos {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .introProductos div h2 {
+    width: 700px;
+    height: 80px;
+    font-size: 40px;
+  }
+  .introProductos div p {
+    width: 600px;
+    font-size: 30px;
+  }
+  .introProductos img {
+    margin: 20px;
+    width: 650px;
+    height: 500px;
+  }
+  .galeriaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    padding: 12px;
   }
 }
 @media screen and (max-width: 975px) {
@@ -747,13 +809,11 @@ textarea {
     padding: 5px;
     font-size: 20px;
   }
-
   .productosPopulares .contenedorProductos div {
     width: 200px;
     height: 250px;
     margin: 5px;
   }
-
   .productosPopulares .contenedorProductos div img {
     width: 197px;
     height: 200px;
@@ -783,7 +843,6 @@ textarea {
   footer .contenedorContacto div ul {
     margin: 7px;
   }
-
   footer .contenedorContacto div ul li a {
     font-size: 10px;
   }
@@ -809,6 +868,42 @@ textarea {
   .trabajos .trabajosImagen img {
     width: 320px;
     height: 270px;
+  }
+  .personalizarMesa h2 {
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .personalizarMesa p {
+    width: 550px;
+    height: 150px;
+    font-size: 17px;
+    font-weight: 550;
+  }
+  .personalizarMesa button {
+    width: 130px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .introProductos {
+    height: auto;
+    padding: 20px;
+  }
+  .introProductos div h2 {
+    width: 500px;
+    height: 65px;
+    font-size: 30px;
+  }
+  .introProductos div p {
+    width: 450px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .introProductos img {
+    margin: 20px;
+    width: 550px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -837,7 +932,6 @@ textarea {
     height: 200px;
     margin: 5px;
   }
-
   .productosPopulares .contenedorProductos div img {
     width: 147px;
     height: 150px;
@@ -896,6 +990,41 @@ textarea {
     height: 40px;
     padding: 5px;
     font-size: 13px;
+  }
+  .galeriaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .personalizarMesa h2 {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .personalizarMesa p {
+    width: 400px;
+    height: 110px;
+    font-size: 13px;
+  }
+  .personalizarMesa button {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .introProductos div h2 {
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .introProductos div p {
+    width: 300px;
+    font-size: 13px;
+  }
+  .introProductos img {
+    width: 400px;
+    height: 250px;
   }
 }
 @media screen and (max-width: 526px) {
@@ -965,14 +1094,12 @@ textarea {
   }
   footer .contenedorContacto div h5 {
     font-size: 10px;
-
     text-align: center;
   }
   footer .contenedorContacto div ul {
     margin: 5px;
     list-style: none;
   }
-
   footer .contenedorContacto div ul li a {
     font-size: 7px;
   }
@@ -985,7 +1112,6 @@ textarea {
     margin: 5px;
     /* text-align: center; */
   }
-
   .hero h1 {
     font-size: 50px;
   }
@@ -1039,6 +1165,42 @@ textarea {
     font-size: 5px;
     margin-bottom: 30px;
   }
+  .personalizarMesa {
+    height: 50vh;
+  }
+  .personalizarMesa h2 {
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .personalizarMesa p {
+    width: 300px;
+    height: 70px;
+    font-size: 8px;
+  }
+  .personalizarMesa button {
+    width: 70px;
+    height: 20px;
+    font-size: 8px;
+  }
+  .introProductos div h2 {
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .introProductos div p {
+    width: 250px;
+    font-size: 9px;
+  }
+  .introProductos img {
+    width: 350px;
+    height: 200px;
+  }
+  .galeriaProductos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   .servicioPersonalizado .servicioTextoContenedor h2 {
@@ -1070,5 +1232,11 @@ textarea {
   }
   footer .contenedorContacto {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 366px) {
+  .introProductos img {
+    width: 320px;
+    height: 200px;
   }
 }
