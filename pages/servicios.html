@@ -12,15 +12,32 @@
   </head>
   <body>
     <header>
-      <img src="../img/logoInicial.png" alt="Logo de Love Is Sweet" />
-      <nav>
-        <ul>
-          <li><a href="../index.html">INICIO</a></li>
-          <li><a href="./servicios.html">SERVICIOS</a></li>
-          <li><a href="./galeria.html">GALERIA</a></li>
-          <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a></li>
-          <li><a href="./contacto.html">CONTACTO</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light backgroundNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../img/logoInicial.png" alt="Logo de Love Is Sweet"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/sobreNosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -29,7 +46,7 @@
         <p class="animate__animated animate__fadeInDown">PERSONALIZA TU MESA DULCE BASANDOTE EN NUESTROS ANTERIORES TRABAJOS (LOS CUALES ESTÁN EN GALERIA) O CON UNA TEMÁTICA O IDEA QUE TENGAS. PUEDES INCLUIR EN ELLA LOS PRODUCTOS QUE MÁS TE GUSTEN, QUE SE ENCUENTRAN ABAJO</p>
         <button class="animate__animated animate__fadeInDown">ARMAR MESA</button>
       </section>
-      <section class="introProductos">
+      <section class="introProductos" id="productos">
         <div class="trabajosTexto animate__animated animate__fadeIn">
           <h2>TODOS NUESTROS PRODUCTOS</h2>
           <p>Aqui podrás encontrar todos nuestros productos, también puedes agregarlos a tu carrito para luego hacer el pedido.  </p>

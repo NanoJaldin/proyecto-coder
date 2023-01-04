@@ -18,6 +18,10 @@ header {
   align-items: center;
   z-index: 1;
 }
+header .backgroundNav {
+  width: 100%;
+  background-color: #fbe7c6 !important;
+}
 header img {
   width: 100px;
   height: 100px;
@@ -49,23 +53,23 @@ header img:hover {
   transform: scale(1.1);
 }
 
-header nav ul {
+header nav .container-fluid div ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header nav ul li {
+header nav .container-fluid div ul li {
   list-style: none;
   background-color: rgba(217, 116, 170, 0.814);
   border: 2px solid rgba(217, 116, 170, 0.881);
   padding: 3px;
   margin: 10px;
-  transition: escalar 1s;
+  transition-duration: 1s;
 }
-header nav ul li:hover {
-  transform: scale(1.08);
+header nav .container-fluid div ul li:hover {
+  transform: scale(1.1);
 }
-header nav ul li a {
+header nav .container-fluid div ul li a {
   text-decoration: none;
   color: beige;
 }
@@ -295,18 +299,14 @@ header nav ul li a {
 }
 
 .productosPopulares .contenedorProductos div h3 {
-  background-color: rgb(255, 166, 0);
   margin: 10px;
-}
-
-.productosPopulares .contenedorProductos div a {
   text-decoration: none;
   color: black;
   padding: 5px;
   font-weight: bold;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 .productosPopulares .contenedorProductos div img {
   width: 250px;
@@ -861,11 +861,11 @@ textarea {
     font-size: 12px;
   }
   .servicioPersonalizado .servicioTextoContenedor button {
-    width: 50px;
-    height: 20px;
+    width: 70px;
+    height: 30px;
   }
   .servicioPersonalizado .servicioTextoContenedor button a {
-    font-size: 10px;
+    font-size: 15px;
   }
   .trabajos .trabajosTexto h2 {
     width: 300px;
@@ -877,13 +877,13 @@ textarea {
     padding: 5px;
     font-size: 12px;
   }
-  .trabajos .trabajosTexto button {
+  /* .trabajos .trabajosTexto button {
     width: 50px;
     height: 20px;
   }
   .trabajos .trabajosTexto button a {
     font-size: 10px;
-  }
+  } */
   .productosPopulares {
     height: 70vh;
   }
@@ -898,16 +898,21 @@ textarea {
     height: 250px;
     margin: 5px;
   }
-  .productosPopulares .contenedorProductos div img {
+  .productosPopulares .contenedorProductos div a img {
     width: 197px;
     height: 200px;
   }
+  .productosPopulares .contenedorProductos div h3 {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
   .productosPopulares button {
     width: 80px;
-    height: 20px;
+    height: 33px;
   }
   .productosPopulares button a {
-    font-size: 10px;
+    font-size: 13px;
   }
   footer .contenedorMarca img {
     width: 150px;
@@ -1016,7 +1021,7 @@ textarea {
     height: 200px;
     margin: 5px;
   }
-  .productosPopulares .contenedorProductos div img {
+  .productosPopulares .contenedorProductos div a img {
     width: 147px;
     height: 150px;
   }
@@ -1047,11 +1052,16 @@ textarea {
     font-size: 7px;
   }
   .servicioPersonalizado .servicioTextoContenedor button {
-    width: 45px;
-    height: 15px;
+    /* width: 50px; */
+    height: 27px;
+    padding: 0;
   }
   .servicioPersonalizado .servicioTextoContenedor button a {
-    font-size: 7px;
+    font-size: 9px;
+    padding: 0;
+    margin: 0;
+    /* font-style: normal;
+    font-weight: normal; */
   }
   .trabajos .trabajosTexto h2 {
     width: 200px;
@@ -1064,7 +1074,7 @@ textarea {
   }
   .trabajos .trabajosTexto button {
     width: 45px;
-    height: 15px;
+    height: 27px;
   }
   .trabajos .trabajosTexto button a {
     font-size: 7px;
@@ -1131,7 +1141,7 @@ textarea {
   .servicioPersonalizado .servicioTextoContenedor button {
     align-self: flex-end;
     width: 60px;
-    height: 20px;
+    height: 30px;
   }
   .servicioPersonalizado .servicioTextoContenedor button a {
     font-size: 12px;
@@ -1156,7 +1166,7 @@ textarea {
   .trabajos .trabajosTexto button {
     align-self: flex-end;
     width: 60px;
-    height: 20px;
+    height: 30px;
   }
   .trabajos .trabajosTexto button a {
     font-size: 12px;
