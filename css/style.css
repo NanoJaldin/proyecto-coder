@@ -242,6 +242,9 @@ header nav ul li a {
   font-style: oblique;
   font-weight: bold;
 }
+.trabajos .trabajosImagen .carousel-inner div img {
+  overflow: hidden;
+}
 .trabajos .trabajosImagen img {
   width: 700px;
   height: 500px;
@@ -301,6 +304,9 @@ header nav ul li a {
   color: black;
   padding: 5px;
   font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 10px;
 }
 .productosPopulares .contenedorProductos div img {
   width: 250px;
@@ -1226,6 +1232,11 @@ textarea {
     width: 370px;
     height: 250px;
   }
+  .productosPopulares h2 {
+    width: 270px;
+    height: 60px;
+    font-size: 20px;
+  }
   .productosPopulares .contenedorProductos .pastaflora {
     display: none;
   }
@@ -1284,6 +1295,9 @@ textarea {
   }
 }
 @media screen and (max-width: 400px) {
+  .hero h1 {
+    font-size: 45px;
+  }
   .servicioPersonalizado .servicioTextoContenedor h2 {
     width: 230px;
     font-size: 17px;
