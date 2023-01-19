@@ -1,0 +1,46 @@
+// -----HEADER-----
+header {
+  background-color: #fbe7c6;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  .backgroundNav {
+    width: 100%;
+    background-color: #fbe7c6;
+    a {
+      img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        transition: 1s;
+        animation: transformar 4s 1s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    div {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+          list-style: none;
+          background-color: rgba(217, 116, 170, 0.814);
+          border: 2px solid rgba(217, 116, 170, 0.881);
+          padding: 3px;
+          margin: 10px;
+          transition-duration: 1s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

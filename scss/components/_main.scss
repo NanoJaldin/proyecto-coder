@@ -1,0 +1,367 @@
+// -------MAIN-------
+// INDEX
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.532), rgba(0, 0, 0, 0.503)),
+    url("../img/fondo.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 120px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 7px rgba(238, 129, 129, 0.9);
+  }
+  h2 {
+    font-size: 50px;
+    font-style: italic;
+    margin: 10px;
+  }
+  div {
+    width: 80%;
+    margin: 0 auto;
+    p {
+      font-size: 30px;
+    }
+  }
+}
+.servicioPersonalizado {
+  background-color: #fbe7c6;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  .servicioTextoContenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      border: 2px solid black;
+      width: 600px;
+      text-align: center;
+      margin: 15px;
+      padding: 5px;
+      background-color: rgba(250, 128, 114, 0.736);
+      font-size: 40px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    p {
+      width: 580px;
+      text-align: center;
+      border: 1px solid gray;
+      margin: 10px;
+      background-color: #b4f8c9b3;
+      padding: 10px;
+      font-size: medium;
+    }
+    button {
+      width: 90px;
+      height: 30px;
+      background-color: rgba(127, 255, 212, 0.419);
+      align-self: start;
+      transition: 1s;
+      &:hover {
+        transform: scale(1.2);
+        background-color: #a72f2f;
+        a {
+          color: white;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-style: oblique;
+        font-weight: bold;
+      }
+    }
+  }
+  .servicioImagen {
+    margin: 20px 0px 20px 0px;
+    img {
+      width: 550px;
+      height: 500px;
+      margin: 10px;
+    }
+  }
+}
+.primerGradiente {
+  background: rgb(251, 231, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 231, 198, 1) 0%,
+    rgba(230, 197, 216, 1) 100%
+  );
+  width: 100%;
+  height: 40px;
+}
+.trabajos {
+  background-color: #e6c5d8;
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  .trabajosTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 40px;
+    h2 {
+      border: 2px solid black;
+      width: 500px;
+      height: 100px;
+      text-align: center;
+      margin: 15px;
+      padding-top: 15px;
+      background-color: rgba(250, 128, 114, 0.736);
+      font-size: 40px;
+      font-weight: bold;
+      justify-self: start;
+    }
+    p {
+      width: 480px;
+      text-align: center;
+      border: 1px solid gray;
+      background-color: #b4f8c9b3;
+      margin: 10px;
+      padding: 10px;
+      font-size: medium;
+    }
+    button {
+      background-color: rgba(127, 255, 212, 0.419);
+      width: 90px;
+      height: 30px;
+      align-self: start;
+      transition: 1s;
+      &:hover {
+        transform: scale(1.2);
+        background-color: #a72f2f;
+        a {
+          color: white;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        font-style: oblique;
+        font-weight: bold;
+      }
+    }
+  }
+  .trabajosImagen {
+    z-index: 1;
+    img {
+      width: 700px;
+      height: 500px;
+      margin: 40px 0px 40px 10px;
+    }
+  }
+}
+.segundoGradiente {
+  background: rgb(236, 248, 127);
+  background: linear-gradient(
+    0deg,
+    rgba(236, 248, 127, 1) 0%,
+    rgba(230, 197, 216, 1) 100%
+  );
+  width: 100%;
+  height: 40px;
+}
+.productosPopulares {
+  background-color: #ecf87f;
+  height: 600px;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  h2 {
+    border: 2px solid black;
+    width: 650px;
+    height: 80px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(250, 128, 114, 0.736);
+    font-size: 40px;
+    font-weight: bold;
+    align-self: center;
+  }
+  .contenedorProductos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    div {
+      border: 1px solid black;
+      width: 250px;
+      height: 310px;
+      text-align: center;
+      margin: 15px;
+      background-color: rgb(235, 186, 80);
+      a {
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+      h3 {
+        margin: 10px;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        font-weight: bold;
+        font-family: "Lato", sans-serif;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 20px;
+      }
+    }
+  }
+  button {
+    background-color: rgba(127, 255, 212, 0.419);
+    width: 120px;
+    height: 30px;
+    align-self: end;
+    margin-right: 15px;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+      background-color: #a72f2f;
+      a {
+        color: white;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: larger;
+      font-style: oblique;
+      font-weight: bold;
+    }
+  }
+}
+// SERVICIOS
+.personalizarMesa {
+  background: linear-gradient(rgba(0, 0, 0, 0.561), rgba(0, 0, 0, 0.51)),
+    url("../img/fondoServicios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  h2 {
+    border: 2px solid black;
+    width: 650px;
+    height: 80px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(250, 128, 114, 0.936);
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    align-self: flex-start;
+  }
+  p {
+    border: solid 1px black;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: #b4f8cae8;
+    margin: 15px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  button {
+    width: 160px;
+    height: 50px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.889);
+    background-color: rgba(127, 255, 212, 0.889);
+    font-size: larger;
+    font-style: oblique;
+    align-self: flex-start;
+    margin: 0px 0px 30px 30px;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.2);
+      background-color: #a72f2f;
+      color: white;
+    }
+  }
+}
+.introProductos {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fffdd1;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+      border: 2px solid black;
+      width: 650px;
+      height: 80px;
+      text-align: center;
+      padding: 5px;
+      background-color: rgba(250, 128, 114, 0.936);
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px;
+      margin-top: 50px;
+    }
+    p {
+      width: 480px;
+      text-align: center;
+      border: 1px solid gray;
+      background-color: #b4f8cae8;
+      margin: 10px;
+      padding: 10px;
+      font-size: 30px;
+    }
+  }
+  img {
+    align-self: center;
+    width: 600px;
+    height: 550px;
+  }
+}
+.galeriaProductos {
+  background-color: #fffdd1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 15px;
+  padding: 30px;
+  .itemProducto {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

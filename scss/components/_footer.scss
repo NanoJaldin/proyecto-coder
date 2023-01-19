@@ -1,0 +1,73 @@
+// ------FOOTER------
+footer {
+  background-color: #ddc67b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  .contenedorMarca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    div {
+      border: 1px solid black;
+      width: 400px;
+      margin: 10px;
+      h4 {
+        font-weight: bold;
+        font-size: 45px;
+        text-align: center;
+      }
+      p {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+  .contenedorContacto {
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      h5 {
+        font-size: 30px;
+        transition: 1s;
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+      ul {
+        li {
+          list-style: none;
+          text-align: center;
+          font-size: 15px;
+          transition: 1s;
+          &:hover {
+            transform: scale(1.08);
+            color: #a72f2f;
+            a {
+              color: #a72f2f;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+}
