@@ -1,16 +1,12 @@
 // ------FOOTER------
 footer {
-  background-color: #ddc67b;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background-color: $colorFooter;
+  @include flex(flex, space-around, center, row);
   height: 250px;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   .contenedorMarca {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center, row);
     img {
       width: 200px;
       height: 200px;
@@ -32,14 +28,11 @@ footer {
     }
   }
   .contenedorContacto {
-    display: flex;
-    justify-content: center;
+    @include flex(flex, center, stretch, row);
     font-family: "Lato", sans-serif;
     font-family: "Noto Sans", sans-serif;
     div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flex(flex, center, stretch, column);
       text-align: center;
       h5 {
         font-size: 30px;

@@ -12,10 +12,7 @@
   color: white;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, column);
   h1 {
     font-size: 120px;
     font-weight: bolder;
@@ -41,20 +38,16 @@
   background-size: cover;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  justify-content: space-evenly;
+  @include flex(flex, space-evenly, stretch, row);
   .servicioTextoContenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center, column);
     h2 {
       border: 2px solid black;
       width: 600px;
       text-align: center;
       margin: 15px;
       padding: 5px;
-      background-color: rgba(250, 128, 114, 0.736);
+      background-color: $bgTitulos;
       font-size: 40px;
       font-style: italic;
       font-weight: bold;
@@ -64,7 +57,7 @@
       text-align: center;
       border: 1px solid gray;
       margin: 10px;
-      background-color: #b4f8c9b3;
+      background-color: $bgParrafo;
       padding: 10px;
       font-size: medium;
     }
@@ -114,13 +107,9 @@
   background-size: cover;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  justify-content: space-evenly;
+  @include flex(flex, space-evenly, stretch, row);
   .trabajosTexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    @include flex(flex, start, center, column);
     margin-top: 40px;
     h2 {
       border: 2px solid black;
@@ -129,7 +118,7 @@
       text-align: center;
       margin: 15px;
       padding-top: 15px;
-      background-color: rgba(250, 128, 114, 0.736);
+      background-color: $bgTitulos;
       font-size: 40px;
       font-weight: bold;
       justify-self: start;
@@ -138,7 +127,7 @@
       width: 480px;
       text-align: center;
       border: 1px solid gray;
-      background-color: #b4f8c9b3;
+      background-color: $bgParrafo;
       margin: 10px;
       padding: 10px;
       font-size: medium;
@@ -189,24 +178,20 @@
   height: 600px;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  @include flex(flex, space-evenly, stretch, column);
   h2 {
     border: 2px solid black;
     width: 650px;
     height: 80px;
     text-align: center;
     padding: 5px;
-    background-color: rgba(250, 128, 114, 0.736);
+    background-color: $bgTitulos;
     font-size: 40px;
     font-weight: bold;
     align-self: center;
   }
   .contenedorProductos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(flex, space-evenly, center, row);
     div {
       border: 1px solid black;
       width: 250px;
@@ -264,10 +249,7 @@
   background-position: center;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, column);
   height: 80vh;
   h2 {
     border: 2px solid black;
@@ -275,7 +257,7 @@
     height: 80px;
     text-align: center;
     padding: 5px;
-    background-color: rgba(250, 128, 114, 0.936);
+    background-color: $bgTitulos;
     font-size: 40px;
     font-weight: bold;
     margin: 20px;
@@ -287,7 +269,7 @@
     height: 200px;
     text-align: center;
     border: 1px solid gray;
-    background-color: #b4f8cae8;
+    background-color: $bgParrafo;
     margin: 15px;
     padding: 10px;
     font-size: 24px;
@@ -313,23 +295,19 @@
 }
 .introProductos {
   height: 650px;
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, stretch, row);
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   background-color: #fffdd1;
   div {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(flex, flex-start, center, column);
     h2 {
       border: 2px solid black;
       width: 650px;
       height: 80px;
       text-align: center;
       padding: 5px;
-      background-color: rgba(250, 128, 114, 0.936);
+      background-color: $bgTitulos;
       font-size: 40px;
       font-weight: bold;
       margin: 20px;
@@ -339,7 +317,7 @@
       width: 480px;
       text-align: center;
       border: 1px solid gray;
-      background-color: #b4f8cae8;
+      background-color: $bgParrafo;
       margin: 10px;
       padding: 10px;
       font-size: 30px;
@@ -373,7 +351,7 @@
   padding: 20px 10px;
   h2 {
     border: 1px solid black;
-    background-color: #ddc67b;
+    background-color: $bgTitulos;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -413,17 +391,14 @@
 // SOBRE NOSOTROS
 .quienesSomos {
   background-color: #fffeb8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex(flex, center, center, column);
   h1 {
     border: 2px solid black;
     width: 500px;
     text-align: center;
     margin: 15px;
     padding: 5px;
-    background-color: rgba(250, 128, 114, 0.736);
+    background-color: $bgTitulos;
     font-size: 40px;
     font-style: italic;
     font-weight: bold;
@@ -431,16 +406,14 @@
   div {
     width: 100%;
     margin: 50px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center, row);
     p {
       width: 580px;
       height: 300px;
       text-align: center;
       border: 1px solid gray;
       margin: 10px;
-      background-color: #b4f8c9b3;
+      background-color: $bgParrafo;
       padding: 10px;
       font-size: 20px;
     }
@@ -460,9 +433,7 @@
   height: 130vh;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, row);
   .formContenedor {
     background-color: #ec7b7fcc;
     width: 60%;
@@ -491,9 +462,7 @@
     .formTitulo {
       grid-area: titulo;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center, row);
       h2 {
         font-size: 60px;
         text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.56);
@@ -545,9 +514,7 @@
     }
     .formEnviar {
       grid-area: enviar;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, center, center, row);
       input {
         height: 100%;
         width: 20%;

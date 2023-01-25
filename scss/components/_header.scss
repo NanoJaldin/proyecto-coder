@@ -1,17 +1,15 @@
 // -----HEADER-----
 header {
-  background-color: #fbe7c6;
+  background-color: $colorHeader;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(flex, space-between, center, row);
   z-index: 2;
   .backgroundNav {
     width: 100%;
-    background-color: #fbe7c6;
+    background-color: $colorHeader;
     a {
       img {
         width: 80px;
@@ -26,9 +24,7 @@ header {
     }
     div {
       ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center, row);
         li {
           list-style: none;
           background-color: rgba(217, 116, 170, 0.814);
