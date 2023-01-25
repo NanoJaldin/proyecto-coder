@@ -723,30 +723,6 @@ footer .contenedorContacto div ul li a {
   background-color: #ff4949;
   color: aliceblue;
 }
-/* .formulario form h2 {
-  font-size: 60px;
-  color: #fbe7c6;
-  text-align: center;
-}
-.formulario form .formContenedor {
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.formContenedor div input,
-textarea {
-  width: 500px;
-  margin-bottom: 5px;
-  padding: 7px;
-}
-.formContenedor div textarea {
-  min-height: 100px;
-  max-height: 150px;
-  min-width: 500px;
-  max-width: 500px;
-} */
 
 /*--------- MEDIAS QUERIES -----------*/
 
@@ -1287,9 +1263,9 @@ textarea {
   }
 }
 @media screen and (max-width: 620px) {
-  header {
+  /* header {
     flex-direction: column;
-  }
+  } */
   .servicioPersonalizado .servicioTextoContenedor h2 {
     width: 200px;
     font-size: 13px;
