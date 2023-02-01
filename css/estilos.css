@@ -756,9 +756,14 @@ footer {
     font-size: 25px; } }
 
 @media screen and (max-width: 991px) {
-  header nav div div ul li {
+  header .backgroundNav div div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  header .backgroundNav div div ul li {
     width: 250px;
-    height: 70px;
+    height: 80px;
     text-align: center;
     font-size: 30px; } }
 
@@ -941,9 +946,9 @@ footer {
     height: 250px; } }
 
 @media screen and (max-width: 690px) {
-  header nav div div ul li {
+  header .backgroundNav div div ul li {
     width: 230px;
-    height: 50px;
+    height: 70px;
     font-size: 25px; }
   .servicioPersonalizado .servicioImagen img {
     width: 270px;
@@ -1149,7 +1154,7 @@ footer {
     height: 300px; } }
 
 @media screen and (max-width: 500px) {
-  header nav div div ul li {
+  header .backgroundNav div div ul li {
     margin: 5px; }
   .hero h1 {
     font-size: 50px; }
@@ -1202,8 +1207,9 @@ footer {
   header nav div a img {
     width: 70px;
     height: 70px; }
-  header nav div div ul li {
-    width: 160px;
+  header .backgroundNav div div ul li {
+    width: 150px;
+    height: 50px;
     font-size: 20px; }
   footer .contenedorMarca div {
     width: 180px; }
