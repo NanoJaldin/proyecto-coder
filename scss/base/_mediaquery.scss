@@ -11,10 +11,14 @@
     height: 500px;
     margin: 10px;
   }
+  .trabajos .trabajosImagen {
+    width: 600px;
+    height: 500px;
+  }
   .trabajos .trabajosImagen img {
     width: 600px;
     height: 500px;
-    margin: 40px 0px 40px 10px;
+    padding: 40px 0px 40px 10px;
   }
   .introProductos div h2 {
     width: 600px;
@@ -30,6 +34,11 @@
     height: 450px;
   }
 }
+@media screen and (max-width: 1176px) {
+  .quienesSomos div p {
+    height: 400px;
+  }
+}
 @media screen and (max-width: 1150px) {
   .servicioPersonalizado .servicioImagen {
     margin: 15px 0px 15px 0px;
@@ -39,10 +48,14 @@
     height: 400px;
     margin: 10px;
   }
+  .trabajos .trabajosImagen {
+    width: 500px;
+    height: 450px;
+  }
   .trabajos .trabajosImagen img {
     width: 500px;
     height: 450px;
-    margin: 40px 5px 40px 10px;
+    padding: 40px 5px 40px 10px;
   }
   .introProductos img {
     width: 450px;
@@ -105,10 +118,14 @@
     padding: 7px;
     font-size: 17px;
   }
+  .trabajos .trabajosImagen {
+    width: 550px;
+    height: 350px;
+  }
   .trabajos .trabajosImagen img {
     width: 550px;
     height: 350px;
-    margin: 40px 0px 40px 10px;
+    padding: 25px 0px 25px 10px;
   }
   .productosPopulares {
     height: 600px;
@@ -126,7 +143,7 @@
   .productosPopulares .contenedorProductos .tortaTresLeches {
     display: none;
   }
-  .productosPopulares .contenedorProductos div img {
+  .productosPopulares .contenedorProductos div a img {
     width: 317px;
   }
   footer .contenedorMarca img {
@@ -151,7 +168,7 @@
     padding: 20px;
   }
   // GALERIA
-  .fotosBoda h2 {
+  .fotosBoda h1 {
     font-size: 35px;
   }
   .fotosBoda .fotosContenedor {
@@ -179,6 +196,7 @@
   // SOBRE NOSOTRAS
   .quienesSomos div p {
     width: 500px;
+    height: 300px;
     font-size: 17px;
   }
   .quienesSomos div img {
@@ -187,6 +205,10 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .trabajos .trabajosImagen {
+    width: 450px;
+    height: 400px;
+  }
   .trabajos .trabajosImagen img {
     width: 450px;
     height: 400px;
@@ -195,7 +217,7 @@
     width: 270px;
     margin: 5px;
   }
-  .productosPopulares .contenedorProductos div img {
+  .productosPopulares .contenedorProductos div a img {
     width: 267px;
   }
   .introProductos {
@@ -220,6 +242,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
     padding: 12px;
+  }
+  // SOBRE NOSOTRAS
+  .quienesSomos div p {
+    height: 350px;
   }
   .formulario .formContenedor .formEnviar input {
     font-size: 25px;
@@ -254,8 +280,18 @@
     height: 400px;
   }
 }
+@media screen and (max-width: 936px) {
+  // SOBRE NOSOTRAS
+  .quienesSomos div p {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 900px) {
   .servicioPersonalizado .servicioImagen img {
+    width: 400px;
+    height: 350px;
+  }
+  .trabajos .trabajosImagen {
     width: 400px;
     height: 350px;
   }
@@ -266,12 +302,18 @@
   // SOBRE NOSOTRAS
   .quienesSomos div p {
     width: 450px;
-    height: 250px;
+    height: 290px;
     font-size: 15px;
   }
   .quienesSomos div img {
     width: 450px;
     height: 350px;
+  }
+}
+@media screen and (max-width: 867px) {
+  // SOBRE NOSOTRAS
+  .quienesSomos div p {
+    height: 310px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -355,6 +397,10 @@
 }
 @media screen and (max-width: 840px) {
   // SOBRE NOSOTRAS
+  .quienesSomos h1 {
+    height: 65px;
+    width: 400px;
+  }
   .quienesSomos div p {
     font-size: 14px;
   }
@@ -405,19 +451,23 @@
     width: 320px;
     height: 270px;
   }
+  .trabajos .trabajosImagen {
+    width: 320px;
+    height: 270px;
+  }
   .trabajos .trabajosImagen img {
     width: 320px;
     height: 270px;
   }
   // SERVICIOS
-  .personalizarMesa h2 {
+  .personalizarMesa h1 {
     width: 500px;
     height: 60px;
     font-size: 30px;
   }
   .personalizarMesa p {
     width: 550px;
-    height: 150px;
+    height: 180px;
     font-size: 17px;
     font-weight: 550;
   }
@@ -447,7 +497,7 @@
     height: 400px;
   }
   // GALERIA
-  .fotosBoda h2 {
+  .fotosBoda h1 {
     font-size: 30px;
   }
   .fotosBoda .fotosContenedor {
@@ -480,6 +530,12 @@
     height: 250px;
   }
 }
+@media screen and (max-width: 739px) {
+  // SOBRE NOSOTRAS
+  .quienesSomos div p {
+    height: 230px;
+  }
+}
 @media screen and (max-width: 690px) {
   header .backgroundNav div div ul li {
     width: 230px;
@@ -487,6 +543,10 @@
     font-size: 25px;
   }
   .servicioPersonalizado .servicioImagen img {
+    width: 270px;
+    height: 200px;
+  }
+  .trabajos .trabajosImagen {
     width: 270px;
     height: 200px;
   }
@@ -519,11 +579,17 @@
     font-size: 50px;
   }
 }
+@media screen and (max-width: 679px) {
+  // SOBRE NOSOTRAS
+  .quienesSomos div p {
+    height: 270px;
+  }
+}
 @media screen and (max-width: 650px) {
   // SOBRE NOSOTRAS
   .quienesSomos div p {
     width: 350px;
-    height: 150px;
+    height: 180px;
     font-size: 10px;
   }
   .quienesSomos div img {
@@ -586,7 +652,7 @@
     padding: 10px;
   }
   // GALERIA
-  .fotosBoda h2 {
+  .fotosBoda h1 {
     font-size: 25px;
   }
   .fotosBoda .fotosContenedor {
@@ -605,8 +671,8 @@
     flex-direction: column;
   }
   .quienesSomos div p {
-    width: 500px;
-    height: 250px;
+    width: 520px;
+    height: 280px;
     font-size: 17px;
   }
   .quienesSomos div img {
@@ -619,14 +685,14 @@
     flex-direction: column;
   }
   // SERVICOS
-  .personalizarMesa h2 {
+  .personalizarMesa h1 {
     width: 350px;
     height: 50px;
     font-size: 20px;
   }
   .personalizarMesa p {
     width: 400px;
-    height: 110px;
+    height: 150px;
     font-size: 13px;
   }
   .personalizarMesa button {
@@ -668,9 +734,9 @@
     margin-top: 10px;
   }
   .quienesSomos div p {
-    width: 450px;
-    height: 200px;
-    font-size: 15px;
+    width: 480px;
+    height: 210px;
+    font-size: 14px;
   }
   .quienesSomos div img {
     width: 500px;
@@ -724,6 +790,10 @@
   .trabajos .trabajosTexto button a {
     font-size: 12px;
   }
+  .trabajos .trabajosImagen {
+    width: 450px;
+    height: 300px;
+  }
   .trabajos .trabajosImagen img {
     width: 450px;
     height: 300px;
@@ -751,8 +821,8 @@
     margin-top: 10px;
   }
   .quienesSomos div p {
-    width: 400px;
-    height: 150px;
+    width: 450px;
+    height: 170px;
     font-size: 12px;
   }
   .quienesSomos div img {
@@ -793,6 +863,10 @@
     width: 350px;
     font-size: 15px;
   }
+  .trabajos .trabajosImagen {
+    width: 370px;
+    height: 250px;
+  }
   .trabajos .trabajosImagen img {
     width: 370px;
     height: 250px;
@@ -820,7 +894,7 @@
   }
   .quienesSomos div p {
     width: 350px;
-    height: 100px;
+    height: 130px;
     font-size: 9px;
   }
   .quienesSomos div img {
@@ -845,14 +919,14 @@
   .personalizarMesa {
     height: 50vh;
   }
-  .personalizarMesa h2 {
+  .personalizarMesa h1 {
     width: 250px;
     height: 35px;
     font-size: 15px;
   }
   .personalizarMesa p {
     width: 300px;
-    height: 70px;
+    height: 90px;
     font-size: 8px;
   }
   .personalizarMesa button {
@@ -879,7 +953,7 @@
     padding: 10px;
   }
   // GALERIA
-  .fotosBoda h2 {
+  .fotosBoda h1 {
     font-size: 20px;
   }
   .fotosBoda .fotosContenedor {
@@ -922,6 +996,10 @@
     width: 300px;
     font-size: 13px;
   }
+  .trabajos .trabajosImagen {
+    width: 330px;
+    height: 200px;
+  }
   .trabajos .trabajosImagen img {
     width: 330px;
     height: 200px;
@@ -959,7 +1037,7 @@
   }
   .quienesSomos div p {
     width: 300px;
-    height: 100px;
+    height: 130px;
     font-size: 8px;
   }
   .quienesSomos div img {

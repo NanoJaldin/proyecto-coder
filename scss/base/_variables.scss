@@ -1,8 +1,8 @@
 // VARIABLES
 $bgTitulos: rgba(250, 128, 114, 0.736);
 $bgParrafo: #b4f8c9b3;
-$colorHeader: #fbe7c6;
-$colorFooter: #ffaff0;
+$coloresPrincipales: #fbe7c6, #ffdda7, #f3dce9, #e8f8c1, #fffdd1, #cb525c;
+$letrasFooter: antiquewhite;
 
 // MIXINS
 @mixin flex($display, $justify, $align, $direction) {

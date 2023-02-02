@@ -1,6 +1,6 @@
 // -----HEADER-----
 header {
-  background-color: $colorHeader;
+  background-color: nth($coloresPrincipales, 1);
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   position: sticky;
@@ -9,7 +9,7 @@ header {
   z-index: 2;
   .backgroundNav {
     width: 100%;
-    background-color: $colorHeader;
+    background-color: nth($coloresPrincipales, 1);
     a {
       img {
         width: 80px;

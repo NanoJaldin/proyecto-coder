@@ -1,6 +1,6 @@
 // ------FOOTER------
 footer {
-  background-color: $colorFooter;
+  background-color: nth($coloresPrincipales, 6);
   @include flex(flex, space-around, center, row);
   height: 250px;
   font-family: "Lato", sans-serif;
@@ -12,18 +12,19 @@ footer {
       height: 200px;
     }
     div {
-      border: 1px solid black;
       width: 400px;
       margin: 10px;
       h4 {
         font-weight: bold;
         font-size: 45px;
         text-align: center;
+        color: $letrasFooter;
       }
       p {
         font-weight: bold;
         font-size: 20px;
         text-align: center;
+        color: $letrasFooter;
       }
     }
   }
@@ -37,6 +38,7 @@ footer {
       h5 {
         font-size: 30px;
         transition: 1s;
+        color: $letrasFooter;
         &:hover {
           transform: scale(1.08);
         }
@@ -47,16 +49,17 @@ footer {
           text-align: center;
           font-size: 15px;
           transition: 1s;
+          color: $letrasFooter;
           &:hover {
             transform: scale(1.08);
-            color: #a72f2f;
+            color: #e8b0b5;
             a {
-              color: #a72f2f;
+              color: #e8b0b5;
             }
           }
           a {
             text-decoration: none;
-            color: black;
+            color: $letrasFooter;
             margin: 2px;
           }
         }

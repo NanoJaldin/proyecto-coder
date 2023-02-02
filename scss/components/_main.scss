@@ -34,7 +34,7 @@
   }
 }
 .servicioPersonalizado {
-  background-color: #fbe7c6;
+  background-color: nth($coloresPrincipales, 2);
   background-size: cover;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
@@ -94,16 +94,12 @@
 }
 .primerGradiente {
   background: rgb(251, 231, 198);
-  background: linear-gradient(
-    180deg,
-    rgba(251, 231, 198, 1) 0%,
-    rgba(230, 197, 216, 1) 100%
-  );
+  background: linear-gradient(180deg, #ffdda7 0%, #f3dce9 100%);
   width: 100%;
   height: 40px;
 }
 .trabajos {
-  background-color: #e6c5d8;
+  background-color: nth($coloresPrincipales, 3);
   background-size: cover;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
@@ -156,25 +152,23 @@
   }
   .trabajosImagen {
     z-index: 1;
+    width: 700px;
+    height: 500px;
     img {
       width: 700px;
       height: 500px;
-      margin: 40px 0px 40px 10px;
+      padding: 40px 0px 40px 10px;
     }
   }
 }
 .segundoGradiente {
   background: rgb(236, 248, 127);
-  background: linear-gradient(
-    0deg,
-    rgba(236, 248, 127, 1) 0%,
-    rgba(230, 197, 216, 1) 100%
-  );
+  background: linear-gradient(0deg, #e8f8c1 0%, #f3dce9 100%);
   width: 100%;
   height: 40px;
 }
 .productosPopulares {
-  background-color: #ecf87f;
+  background-color: nth($coloresPrincipales, 4);
   height: 600px;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
@@ -193,15 +187,15 @@
   .contenedorProductos {
     @include flex(flex, space-evenly, center, row);
     div {
-      border: 1px solid black;
+      border: 2px solid black;
       width: 250px;
       height: 310px;
       text-align: center;
       margin: 15px;
-      background-color: rgb(235, 186, 80);
+      background-color: #f3aea5;
       a {
         img {
-          width: 250px;
+          width: 248px;
           height: 250px;
         }
       }
@@ -251,7 +245,7 @@
   font-family: "Noto Sans", sans-serif;
   @include flex(flex, center, center, column);
   height: 80vh;
-  h2 {
+  h1 {
     border: 2px solid black;
     width: 650px;
     height: 80px;
@@ -266,7 +260,7 @@
   p {
     border: solid 1px black;
     width: 700px;
-    height: 200px;
+    height: 250px;
     text-align: center;
     border: 1px solid gray;
     background-color: $bgParrafo;
@@ -298,7 +292,7 @@
   @include flex(flex, center, stretch, row);
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  background-color: #fffdd1;
+  background-color: nth($coloresPrincipales, 5);
   div {
     @include flex(flex, flex-start, center, column);
     h2 {
@@ -320,7 +314,7 @@
       background-color: $bgParrafo;
       margin: 10px;
       padding: 10px;
-      font-size: 30px;
+      font-size: 25px;
     }
   }
   img {
@@ -330,7 +324,7 @@
   }
 }
 .galeriaProductos {
-  background-color: #fffdd1;
+  background-color: nth($coloresPrincipales, 5);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
@@ -345,18 +339,21 @@
 }
 // GALERIA
 .fotosBoda {
-  background-color: #ffd1d5;
+  background-color: nth($coloresPrincipales, 5);
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
   padding: 20px 10px;
-  h2 {
+  h1 {
     border: 1px solid black;
     background-color: $bgTitulos;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    width: 50%;
+    height: 80px;
+    width: 45%;
     margin: 0 auto;
+    display: grid;
+    place-content: center;
   }
   .fotosContenedor {
     width: 100%;
@@ -390,10 +387,11 @@
 }
 // SOBRE NOSOTROS
 .quienesSomos {
-  background-color: #fffeb8;
+  background-color: nth($coloresPrincipales, 5);
   @include flex(flex, center, center, column);
   h1 {
     border: 2px solid black;
+    height: 80px;
     width: 500px;
     text-align: center;
     margin: 15px;
@@ -402,6 +400,8 @@
     font-size: 40px;
     font-style: italic;
     font-weight: bold;
+    display: grid;
+    place-content: center;
   }
   div {
     width: 100%;
@@ -409,7 +409,7 @@
     @include flex(flex, space-around, center, row);
     p {
       width: 580px;
-      height: 300px;
+      height: 350px;
       text-align: center;
       border: 1px solid gray;
       margin: 10px;
